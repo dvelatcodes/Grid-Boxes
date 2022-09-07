@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "i i i i"
+    "j k k l"
+    "j k k m"
+    "n n n n";
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+}
+
+.header{
+    grid-area: i;
+    background-color: rgb(255, 158, 79);
+     height: 93%;
+}
+.right-aside{
+    grid-area: j;
+    background-color: rgb(245, 137, 49);
+    height: 98%;
+    width: 98%;
+}
+.main{
+    grid-area: k;
+    background-color: rgb(250, 119, 12);
+    height: 98%;
+    width: 99%;
+
+}
+.left-aside1{
+    grid-area: l;
+    background-color: rgb(255, 98, 36);
+    height: 94%;
+
+}
+.left-aside2{
+    grid-area: m;
+    background-color: rgb(250, 79, 12);
+    height: 95%;
+    margin-top: 5px;
+
+}
+.footer{
+    grid-area: n;
+    background-color: rgb(250, 79, 12);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "i i i i"
+        "j k k l"
+        "j k k m"
+        "n n n n";
+        height: 90vh;
+        width: 99vw;
+        margin: auto;
+    }
+    
+    .header{
+        grid-area: i;
+        background-color: rgb(255, 158, 79);
+        height: 93%;
+    }
+
+    .right-aside{
+        grid-area: j;
+        background-color: rgb(245, 137, 49);
+        height: 98%;
+        width: 98%;
+    }
+
+    .main{
+        grid-area: k;
+        background-color: rgb(250, 119, 12);
+        height: 98%;
+        width: 99%;
+
+    }
+
+    .left-aside1{
+        grid-area: l;
+        background-color: rgb(255, 98, 36);
+        height: 94%;
+    }
+
+    .left-aside2{
+        grid-area: m;
+        background-color: rgb(250, 79, 12);
+        height: 95%;
+        margin-top: 5px;
+
+    }
+
+    .footer{
+        grid-area: n;
+        background-color: rgb(250, 79, 12);
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container{
+        width: 90vw;
+        height: 90vh;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+        "i i"
+        "ii iii"
+        "iv iv"
+        "v v";
+    }
+
+    .header{
+        grid-area: i;
+        background-color: rgb(255, 158, 79);
+    }
+
+    .right-aside{
+        grid-area: ii;
+        background-color: rgb(245, 137, 49);
+        width: 99%;
+    }
+
+    .main{
+        grid-area: iii;
+        background-color: rgb(250, 119, 12);
+        width: 100%;
+    }
+
+    .left-aside{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        grid-area: iv;
+    }
+
+    .left-aside1{
+        background-color: rgb(255, 98, 36);
+        width: 49.5%;
+        height: 94%;
+    }
+
+    .left-aside2{
+        background-color: rgb(250, 79, 12);
+        height: 94%;
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .footer{
+        grid-area: v;
+        background-color: rgb(250, 79, 12);
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .container {
+        width: 90vw;
+        height: 90vh;
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+        "i"
+        "j"
+        "k"
+        "l"
+        "m"
+        "n"
+   }
+
+    .header {
+        grid-area: i;
+        background-color: rgb(255, 158, 79);
+        height: 96%;
+    }
+
+    .right-aside {
+        grid-area: j;
+        background-color: rgb(245, 137, 49);
+        width: 100%;
+    }
+
+    .main {
+        grid-area: k;
+        background-color: rgb(250, 119, 12);
+        width: 100%;
+    }
+
+    .left-aside1 {
+        grid-area: l;
+        background-color: rgb(255, 98, 36);
+        width: 100%;
+        height: 92%;
+        margin-bottom: 5px;
+    }
+
+    .left-aside2 {
+        grid-area: m;
+        background-color: rgb(250, 79, 12);
+        height: 94%;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer {
+        grid-area: n;
+        background-color: rgb(250, 79, 12);
+    }
+}
